@@ -1,0 +1,18 @@
+{
+  "name": "neon-electron",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.node",
+  "scripts": {
+    "build": "cargo-cp-artifact -nc index.node -- cargo build --message-format=json-render-diagnostics",
+    "install": "npm run build",
+    "test": "cargo test",
+    "dev": "electron ./src/main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cargo-cp-artifact": "^0.1",
+    "electron": "^13.1.8"
+  }
+}
