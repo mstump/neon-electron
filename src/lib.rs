@@ -1,5 +1,6 @@
 use neon::prelude::*;
 
+#[allow(clippy::unnecessary_wraps)]
 fn get_num_cpus(mut cx: FunctionContext) -> JsResult<JsNumber> {
     Ok(cx.number(num_cpus::get() as f64))
 }
@@ -8,4 +9,4 @@ fn get_num_cpus(mut cx: FunctionContext) -> JsResult<JsNumber> {
 fn main(mut cx: ModuleContext) -> NeonResult<()> {
     cx.export_function("get", get_num_cpus)?;
     Ok(())
-}   
+}
