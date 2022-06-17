@@ -11,7 +11,7 @@ crate-type = ["cdylib"]
 [dependencies.neon]
 default-features = false
 features = ["napi-6"]
-version = "0.9"
+version = "0.10"
 
 [dependencies]
 num_cpus = "1"
