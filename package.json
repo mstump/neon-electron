@@ -15,7 +15,7 @@
   "license": "mstump",
   "devDependencies": {
     "cargo-cp-artifact": "^0.1",
-    "electron": "^13.1.8",
+    "electron": "^15.5.5",
     "tslint": "^6.1.3",
     "typescript": "^4.3.5"
   }
